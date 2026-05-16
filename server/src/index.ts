@@ -123,8 +123,8 @@ async function main() {
   setupWebSocket(server, appContext);
 
   const PORT = process.env.PORT || 3100;
-  server.listen(PORT, () => {
-    console.log(`[WorldX] Server running on http://localhost:${PORT}`);
+  server.listen({ port: PORT, host: "0.0.0.0" }, () => {
+    console.log(`[WorldX] Server running on http://0.0.0.0:${PORT}`);
     console.log(`[WorldX] WebSocket available on ws://localhost:${PORT}`);
   });
 }
