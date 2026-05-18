@@ -9,6 +9,10 @@ export default defineConfig({
   },
   server: {
     port: 3200,
+    host: "0.0.0.0",
+    fs: {
+      allow: [path.resolve(__dirname, "..")],
+    },
     proxy: {
       "/api": "http://localhost:3100",
       "/assets": "http://localhost:3100",

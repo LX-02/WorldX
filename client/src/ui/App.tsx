@@ -14,6 +14,7 @@ import { WorldIntroBanner } from "./panels/WorldIntroBanner";
 import { Timeline } from "./pages/Timeline";
 import { CreateWorldPage } from "./pages/CreateWorldPage";
 import { CreateWorldBackground } from "./pages/CreateWorldBackground";
+import { SharePage } from "./pages/SharePage";
 import type { SimulationEvent, DialogueEventData, WorldTimeInfo } from "../types/api";
 import { apiClient } from "./services/api-client";
 import type { GeneratedWorldSummary, WorldInfo } from "./services/api-client";
